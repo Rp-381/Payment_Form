@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Payment Form </title>
+    </head>
+    
+    <body style="background-color:powderblue;">
+        <form action="">
+            <h1 style="color:blue; text-align: center;"> Payment Form</h1>
+            <hr>
+            <h2 style="color:blue; text-align: center;"> Contact Information</h2>
+            <hr>
+            <p  style="color:blue;"> Name: &nbsp; *<input type="text" name="name" required></p>
+            
+            <fieldset style="border-color: aqua">
+                <legend style="color:blue;">Gender *</legend>
+                    <p  style="color:blue;"> Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female" required></p>
+                 <input type="reset" value="Reset">
+            </fieldset>
+            
+            <p style="color:blue;"> Address: &nbsp; <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+            
+            <p style="color:blue;"> City: &nbsp; <input type="text" name="city" id="city"></p>
+            
+            <p style="color:blue;"> State: &nbsp; <input type="text" name="state" id="state"></p>
+            
+            <p style="color:blue;"> Country: &nbsp; <input type="text" name="country" id="country"></p>
+            
+            <p style="color:blue;"> Email: &nbsp; *<input type="email" name="email" id="email" required></p>
+            
+            <p style="color:blue;"> Pincode: &nbsp; <input type="number" name="pincode" id="pincode"> </p>
+            <hr>
+            <h2 style="color:blue; text-align: center;"> Payment Information</h2>
+            <hr>
+            <p style="color:blue;"> Card Type: &nbsp;
+            <select>
+                <option value="">--Select an option type--</option>
+                <option value="visa">Visa</option>
+                <option value="paytm">Paytm</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+            </p>
+            <p style="color:blue;"> Card Number: &nbsp; *<input type="number" name="card_number" id="card_number" required></p>
+            
+            <p style="color:blue;">Expiration Date: &nbsp; *<input type="date" name="exp_date" id="exp_date" required></p>
+            
+            <p style="color:blue;">CVV: &nbsp; *<input type="password" name="cvv" id="cvv"></p>
+            
+            <p style="color:blue;">Address Proof: &nbsp; *<input type="file" name="myfile" id="myfile" multiple required></p>
+            
+            <input type="submit" value="Pay Now">
+        </form>
+    </body>
+</html>
